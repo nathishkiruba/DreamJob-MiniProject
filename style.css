@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+header{
+    background-color: #750DB5;
+    padding: 20px;
+}
+.container {
+    width: 80%;
+  
+    margin: 0px auto;
+  
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrapper h4{
+    font-size: 32px;
+    color: #ffffff;
+}
+.header-wrapper nav{
+    display: flex;
+    gap: 30px;
+}
+.header-wrapper nav a {
+   
+    text-decoration: none;
+    color: #ffffff;
+}
+.banner{
+    padding: 100px 0px;
+}
+.banner-wrapper{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.banner-wrapper h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-wrapper p{
+    color: #505050;
+    margin: 30px 0px;
+}
+.banner-wrapper a{
+    text-decoration: none;
+    
+}
+.banner-wrapper .child-2 img{
+    width: 100%;
+}
+
+.banner-btn{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+ 
+}
+.banner-btn :first-child{
+    background-color: #FFA92C;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 12px;
+   
+}
+.banner-btn :first-child:hover{
+    box-shadow: 1px 1px 30px 5px #FFA92C;
+    padding: 15px 35px;
+}
+.banner-btn :last-child{
+    color: #14121F;
+    padding: 10px 20px; 
+}
+.job-wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    color: #ffffff;
+    flex-wrap: wrap;
+    
+}
+.job-wrapper a{
+    color: #ffffff;
+    text-decoration: none;
+    gap: 20px;
+  
+
+}
+.job-wrapper > div:first-child{
+    width: 32%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0C445C;
+}
+.job-wrapper > div:nth-child(2){
+    width: 32%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5B2C98;
+}
+.job-wrapper > div:last-child{
+    width: 32%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #7F3219;
+}
+.job-wrapper p{
+    display: inline-block;
+    margin: 20px 0px;
+}
+.job-box-1 a,
+.job-box-2 a,
+.job-box-3 a{
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 6px;
+    margin-right: 30px;
+}
+
+.footer-wrapper {
+    background-color: grey;
+    padding:15px;
+    margin-top: 2%;   
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:750px){
+    .header-wrapper{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:900px){
+    .banner-wrapper h1{
+        font-size: 30px;
+       
+    }
+}
+@media only screen and (max-width:900px){
+
+    .banner-wrapper .child-2 img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:998px){
+    .banner-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:998px){
+    .banner-btn{
+      justify-content: center;
+    }
+}
+@media only screen and (max-width:998px){
+    .banner-wrapper .child-1 ,
+    .banner-wrapper .child-2{
+       width: 100%;
+    }
+}
+
+ @media only screen and (max-width:998px){
+    .job-wrapper div a{
+        font-size: 14px;
+    }
+    .job-wrapper > div:first-child{
+        width: 49%;
+    }
+    .job-wrapper > div:nth-child(2){
+        width: 49%;
+    }
+    .job-wrapper > div:last-child{
+        margin-top: 1%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:768px){
+    .job-wrapper >div{
+        width: 100% !important;
+      
+    }
+}
+@media only screen and (max-width:768px){
+.job-wrapper > div:nth-child(2){
+    margin-top: 1%;
+}
+}
+@media only screen and (max-width:900px){
+    .banner-btn{
+        flex-direction: column;
+    }
+}
